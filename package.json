@@ -1,0 +1,26 @@
+{
+  "name": "stopwords-ur",
+  "version": "0.1.0",
+  "author": "Gene Diaz <genediazjr@gmail.com> (http://genediazjr.com)",
+  "description": "The most comprehensive collection of stopwords for the urdu language.",
+  "keywords": [
+    "urdu",
+    "stopwords",
+    "stop words"
+  ],
+  "license": "MIT",
+  "repository": "git://github.com/stopwords-iso/stopwords-ur",
+  "bugs": "https://github.com/stopwords-iso/stopwords-ur/issues",
+  "main": "stopwords-ur.json",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "build": "stopwords-collator -s raw -o stopwords-ur",
+    "test": "npm run build && jsonlint stopwords-ur.json -q"
+  },
+  "devDependencies": {
+    "stopwords-collator": "*",
+    "jsonlint": "1.6.x"
+  }
+}
